@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/panelItemBottomNav"
+        android:icon="@drawable/panel"
+        android:title="@string/panel"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/genreCatalogBottomNav"
+        android:icon="@drawable/genre_catalog"
+        android:title="@string/catalog_genres_bottomNav"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/filmsCatalogBottomNav"
+        android:icon="@drawable/films_catalog"
+        android:title="@string/catalog_films_bottomNav"
+        app:showAsAction="ifRoom" />
+
+</menu>

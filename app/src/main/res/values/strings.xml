@@ -7,4 +7,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="delete_all_genres">УДАЛИТЬ ВСЕ ЖАНРЫ</string>
     <string name="delete_all_films">УДАЛИТЬ ВСЕ ФИЛЬМЫ</string>
+    <string name="edit_genre">РЕДАКТИРОВАНИЕ ЖАНРА</string>
+    <string name="enter_name_genre">Введите название жанра</string>
 </resources>

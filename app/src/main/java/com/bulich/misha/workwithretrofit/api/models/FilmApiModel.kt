@@ -5,5 +5,4 @@ data class FilmApiModel(
     var name: String? = null,
     var genre: String? = null,
     var rating: String? = null,
-    var duration: String? = null
 )

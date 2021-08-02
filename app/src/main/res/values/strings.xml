@@ -9,4 +9,8 @@
     <string name="delete_all_films">УДАЛИТЬ ВСЕ ФИЛЬМЫ</string>
     <string name="edit_genre">РЕДАКТИРОВАНИЕ ЖАНРА</string>
     <string name="enter_name_genre">Введите название жанра</string>
+    <string name="edit_film">РЕДАКТИРОВАНИЕ ФИЛЬМА</string>
+    <string name="enter_name_film">Введите название фильма</string>
+    <string name="enter_rating_film">Введите рейтинг фильма</string>
+    <string name="add_button_film">ДОБАВИТЬ ФИЛЬМ</string>
 </resources>

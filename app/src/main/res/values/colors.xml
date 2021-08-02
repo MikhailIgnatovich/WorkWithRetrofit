@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="button_color">#ECB845</color>
     <color name="box_edit_background">#2533ce</color>
+    <color name="add_button">#3dd349</color>
 </resources>

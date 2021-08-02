@@ -3,4 +3,8 @@
     <string name="panel">ПАНЕЛЬ</string>
     <string name="catalog_genres_bottomNav">КАТАЛОГ ЖАНРОВ</string>
     <string name="catalog_films_bottomNav">КАТАЛОГ ФИЛЬМОВ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="delete_all_genres">УДАЛИТЬ ВСЕ ЖАНРЫ</string>
+    <string name="delete_all_films">УДАЛИТЬ ВСЕ ФИЛЬМЫ</string>
 </resources>

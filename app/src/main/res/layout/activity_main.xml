@@ -25,7 +25,11 @@
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottomNav"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"/>
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/black"
+                app:menu="@menu/bottom_menu"
+                app:itemIconTint="@color/color_tabs"
+                app:itemTextColor="@color/color_tabs"/>
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

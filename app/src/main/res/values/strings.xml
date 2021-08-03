@@ -13,4 +13,6 @@
     <string name="enter_name_film">Введите название фильма</string>
     <string name="enter_rating_film">Введите рейтинг фильма</string>
     <string name="add_button_film">ДОБАВИТЬ ФИЛЬМ</string>
+    <string name="edit_button_film">ИЗМЕНИТЬ ФИЛЬМ</string>
+    <string name="add_film_header">Добавить фильм</string>
 </resources>

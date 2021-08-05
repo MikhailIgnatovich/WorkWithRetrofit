@@ -59,6 +59,6 @@ interface ApiInterface {
     @GET("getGenre.php")
     fun getGenre(): Call<ArrayList<GenreApiModel>>
 
-    @GET("getFilm")
+    @GET("getFilm.php")
     fun getFilm(): Call<ArrayList<FilmApiModel>>
 }

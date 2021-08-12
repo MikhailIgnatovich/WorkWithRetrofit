@@ -2,6 +2,7 @@ package com.bulich.misha.workwithretrofit
 
 import android.media.Rating
 import android.os.Bundle
+import android.util.Log
 import android.view.KeyEvent
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -51,7 +52,7 @@ class Panel : Fragment(), View.OnKeyListener, View.OnClickListener {
 
             R.id.enterGenreFilm -> {
                 if (event.action == KeyEvent.ACTION_DOWN && keyCode == KeyEvent.KEYCODE_ENTER) {
-                    binding?.resEnterGenreFilm?.text = binding?.resEnterGenreFilm?.text
+                    binding?.resEnterGenreFilm?.text = binding?.enterGenreFilm?.text
                     binding?.enterGenreFilm?.setText("")
 
                     return true
@@ -60,7 +61,7 @@ class Panel : Fragment(), View.OnKeyListener, View.OnClickListener {
 
             R.id.enterRatingFilm -> {
                 if (event.action == KeyEvent.ACTION_DOWN && keyCode == KeyEvent.KEYCODE_ENTER) {
-                    binding?.resEnterRatingFilm?.text = binding?.resEnterRatingFilm?.text
+                    binding?.resEnterRatingFilm?.text = binding?.enterRatingFilm?.text
                     binding?.enterRatingFilm?.setText("")
 
                     return true
@@ -72,7 +73,7 @@ class Panel : Fragment(), View.OnKeyListener, View.OnClickListener {
 
 
     override fun onClick(v: View?) {
-        insertGenre(binding?.resEnterGenreFilm?.text?.toString()!!)
+//        insertGenre(binding?.resEnterGenreFilm?.text?.toString()!!)
         insertFilm(
             binding?.resEnterNameFilm?.text?.toString()!!,
             binding?.resEnterGenreFilm?.text?.toString()!!,
@@ -92,15 +93,16 @@ class Panel : Fragment(), View.OnKeyListener, View.OnClickListener {
             }
 
             override fun onFailure(call: Call<ResponseBody?>, t: Throwable) {
-                TODO("Not yet implemented")
+                Toast.makeText(context, "Ошибка", Toast.LENGTH_LONG).show()
+                Log.d("PAN", "$t")
             }
 
         })
     }
 
 
-    private fun insertFilm(name: String, genre: String, rating: String) {
-        val callInsertFilm = ApiClient.instance?.api?.insertFilm(name, genre, rating)
+    private fun insertFilm(name: String?, genre: String?, rating: String?) {
+        val callInsertFilm: Call<ResponseBody?>? = ApiClient.instance?.api?.insertFilm(name, genre, rating)
 
         callInsertFilm?.enqueue(object : Callback<ResponseBody?> {
             override fun onResponse(call: Call<ResponseBody?>, response: Response<ResponseBody?>) {
